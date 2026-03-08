@@ -1,0 +1,141 @@
+.about {
+  background: #0e0e0e;
+  padding: 120px 60px;
+}
+
+.about-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+/* LEFT VISUAL */
+.about-visual {
+  position: relative;
+  aspect-ratio: 1;
+}
+
+.about-box-main {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(255,255,255,0.07);
+  background: #161616;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.about-watermark {
+  font-family: 'Syne', sans-serif;
+  font-size: 260px;
+  font-weight: 800;
+  color: rgba(255,255,255,0.03);
+  letter-spacing: -0.05em;
+  user-select: none;
+  line-height: 1;
+}
+
+.about-badge-year {
+  position: absolute;
+  top: 40px;
+  left: -24px;
+  background: #161616;
+  border: 1px solid rgba(255,255,255,0.07);
+  padding: 16px 24px;
+  font-size: 13px;
+  color: #6b6b6b;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.about-badge-year strong {
+  display: block;
+  font-family: 'Syne', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: #47c8ff;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.about-badge-location {
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  background: #e8ff47;
+  color: #000;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 12px 20px;
+}
+
+/* RIGHT CONTENT */
+.section-tag {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #e8ff47;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.section-tag::before {
+  content: '';
+  width: 30px;
+  height: 1px;
+  background: #e8ff47;
+}
+
+.section-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(36px, 4vw, 58px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: #f0ede8;
+  margin-bottom: 32px;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #6b6b6b;
+  font-weight: 300;
+  font-family: 'DM Sans', sans-serif;
+  margin-bottom: 16px;
+}
+
+.about-content p strong {
+  color: #f0ede8;
+  font-weight: 400;
+}
+
+.about-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.pill {
+  padding: 8px 18px;
+  border: 1px solid rgba(255,255,255,0.07);
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: #6b6b6b;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.2s;
+  cursor: default;
+}
+
+.pill:hover {
+  border-color: #e8ff47;
+  color: #e8ff47;
+}

@@ -34,7 +34,7 @@ function Hero() {
             <div className="stat-label">Batches</div>
           </div>
           <div className="stat-item">
-            <div className="stat-num">3<span></span></div>
+            <div className="stat-num">4<span></span></div>
             <div className="stat-label">Levels</div>
           </div>
         </div>
@@ -42,7 +42,7 @@ function Hero() {
 
       <div className="scroll-indicator">
         <div className="scroll-line"></div>
-        <span>Scroll</span>
+        <span></span>
       </div>
     </section>
   )
