@@ -1,4 +1,5 @@
 import './About.css'
+import logo from '../../assets/image1.webp'
 
 function About() {
   return (
@@ -7,7 +8,7 @@ function About() {
 
         <div className="about-visual">
           <div className="about-box-main">
-            <div className="about-watermark">M</div>
+            <img src={logo} className="about-watermark"/>
           </div>
           <div className="about-badge-year">
             <strong>2021</strong>
@@ -29,7 +30,7 @@ function About() {
           <p>
             With support from the <strong>UVCE Graduates Association</strong>, we provide
             resources, mentorship, and a community that pushes boundaries across
-            5 cutting-edge domains.
+            7 cutting-edge domains.
           </p>
           <div className="about-pills">
             <div className="pill">Hands-on Learning</div>
