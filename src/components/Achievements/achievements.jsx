@@ -1,7 +1,7 @@
 import './achievements.css'
 
 const stats = [
-  { num: '8', suffix: '+', label: 'Active Batches running across all domains' },
+  { num: '8', suffix: '', label: 'Active Batches running across all domains' },
   { num: '250', suffix: '+', label: 'Students trained and certified since 2021' },
   { num: '50', suffix: '+', label: 'Projects completed by MARVEL students' },
   { num: '7', suffix: '✦', label: 'Niche domains with structured curriculum' },

@@ -31,7 +31,7 @@ function About() {
           <p>
             With support from the <strong>UVCE Graduates Association</strong>, we provide
             resources, mentorship, and a community that pushes boundaries across
-            7 cutting-edge domains.
+            8 cutting-edge domains.
           </p>
           <div className="about-pills">
             <div className="pill">Hands-on Learning</div>

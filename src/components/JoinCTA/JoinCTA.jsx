@@ -8,7 +8,7 @@ function JoinCTA() {
         <h2 className="join-title">Ready to<br />build?</h2>
         <div className="join-right">
           <p className="join-desc">
-            Applications open twice a year. Join a cohort of driven students
+            Applications open twice a year. Join and collaborate with students
             and turn your ideas into reality with MARVEL's resources and mentorship.
           </p>
           <a href="https://hub.uvcemarvel.in" className="join-btn" target="_blank" rel="noreferrer">

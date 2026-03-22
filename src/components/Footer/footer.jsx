@@ -12,10 +12,10 @@ function Footer() {
           <a href="#achievements">Achievements</a>
         </div>
         <div className="footer-socials">
-          <a href="https://instagram.com/visionuvce" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="" target="_blank" rel="noreferrer">Instagram</a>
           <a href="https://twitter.com/marveluvce" target="_blank" rel="noreferrer">Twitter</a>
           <a href="https://github.com/UVCE-Marvel" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://in.linkedin.com/company/uvcega" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.linkedin.com/company/marvel-uvce/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </div>
       <div className="footer-bottom">
