@@ -19,6 +19,7 @@ function About() {
           </div>
         </div>
 
+
         <div className="about-content">
           <div className="section-tag">About MARVEL</div>
           <h2 className="section-title">Not just a lab.<br />A launchpad.</h2>
