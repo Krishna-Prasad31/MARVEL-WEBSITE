@@ -1,4 +1,4 @@
-import './About.css'
+import './about.css'
 import logo from '../../assets/image1.webp'
 
 function About() {
