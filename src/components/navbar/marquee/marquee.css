@@ -44,3 +44,24 @@
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
+
+@media (max-width: 600px) {
+
+  .marquee-section {
+    padding: 14px 0;
+  }
+
+  .marquee-track {
+    animation-duration: 35s; /* slower = smoother */
+  }
+
+  .marquee-item {
+    padding: 0 20px;
+    font-size: 11px;
+    gap: 10px;
+  }
+
+  .marquee-dot {
+    font-size: 12px;
+  }
+}

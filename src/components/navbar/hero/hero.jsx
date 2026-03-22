@@ -12,10 +12,10 @@ function Hero() {
       </div>
 
       <h1 className="hero-title">
-        <div className="line"><span className="word w1">WHERE</span></div>
-        <div className="line"><span className="word w2 accent-word">IDEAS</span></div>
-        <div className="line"><span className="word w3">BECOME</span></div>
-        <div className="line"><span className="word w4">REALITY.</span></div>
+        <div className="line"><span className="word w1">THIS</span></div>
+        <div className="line"><span className="word w3">IS</span></div>
+        <div className="line"><span className="word w2 accent-word">MARVEL</span></div>
+        <div className="line"><span className="word w4">UVCE.</span></div>
       </h1>
 
       <div className="hero-bottom">

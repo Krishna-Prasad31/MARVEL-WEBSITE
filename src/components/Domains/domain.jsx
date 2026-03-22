@@ -78,23 +78,26 @@ function Domains(){
       </div>
     
       <div className="domains-grid">
-        {domains.map((domain) => (
-          <a className="links" href={domain.link} target="blank">
-          <div
-            className="domain-card"
-            key={domain.num}
-            style={{ '--domain-color': domain.color }}
-          >
-            <div className="domain-num">{domain.num}</div>
-            <img src={domain.svg} alt="" />
-            <div className="domain-name">{domain.name}</div>
-            <div className="domain-desc">{domain.desc}</div>
-            <div className="domain-arrow">↗</div>
-          
-          </div>
-          </a>
-        ))}
+  {domains.map((domain) => (
+    <a className="links" href={domain.link} target="_blank" key={domain.num}>
+      <div
+        className="domain-card"
+        style={{ '--domain-color': domain.color }}
+      >
+        <div className="domain-num">{domain.num}</div>
+
+        <img className="domain-img" src={domain.svg} alt="" />
+
+        <div className="domain-content">
+          <div className="domain-name">{domain.name}</div>
+          <div className="domain-desc">{domain.des}</div>
+        </div>
+
+        <div className="domain-arrow">↗</div>
       </div>
+    </a>
+  ))}
+</div>
 
     </section>
   )
