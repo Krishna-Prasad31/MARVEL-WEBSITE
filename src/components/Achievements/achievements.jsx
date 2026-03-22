@@ -1,4 +1,4 @@
-import './Achievements.css'
+import './achievements.css'
 
 const stats = [
   { num: '8', suffix: '+', label: 'Active Batches running across all domains' },
