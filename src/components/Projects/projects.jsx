@@ -1,50 +1,53 @@
 import './projects.css'
+import Proj1 from "../../assets/20241212_170355.jpg"
+import Proj2 from "../../assets/Screenshot 2026-03-27 021559.png"
+import Proj3 from "../../assets/Whats-App-Image-2025-11-18-at-19-59-00-e97c7fa5.jpg"
+import Proj4 from "../../assets/Quad_2.jpeg"
+import Proj5 from "../../assets/Screenshot 2025-10-21 222428.png"
 
 const projects = [
   {
     id: 1,
-    tag: 'AI / ML',
     featured: true,
-    icon: '🤖',
+    icon: Proj1,
     name: 'Autonomous Gesture Recognition System',
-    by: 'Batch 6 · AI/ML Domain',
     color: '#e8ff47'
   },
   {
     id: 2,
-    tag: 'IoT',
+    // tag: 'IoT',
     featured: false,
-    icon: '🌐',
-    name: 'Campus Air Quality Monitor',
-    by: 'Batch 4 · IoT Domain',
-    color: '#47c8ff'
+    icon: Proj2,
+    name: 'GrowRight',
+    color: '#47c8ff',
+    link: "https://hub.uvcemarvel.in/work/a6404716-0d96-455a-b336-abd7fe9f3448"
   },
   {
     id: 3,
-    tag: 'EV',
+    // tag: 'EV',
     featured: false,
-    icon: '⚡',
-    name: 'Smart EV Charging Monitor',
-    by: 'Batch 5 · EV Domain',
-    color: '#47ff8f'
+    icon: Proj3,
+    name: 'Jetson NANO',
+    color: '#47ff8f',
+    link: "https://hub.uvcemarvel.in/work/f4797c5d-5559-4c04-a9ab-bd4e9ae3a071"
   },
   {
     id: 4,
-    tag: 'Cloud',
+    // tag: 'Cloud',
     featured: false,
-    icon: '☁️',
-    name: 'Secure Cloud Storage System',
-    by: 'Batch 7 · CLCY Domain',
-    color: '#ff47c8'
+    icon: Proj4,
+    name: 'Quadra-pod',
+    color: '#ff47c8',
+    link: "https://hub.uvcemarvel.in/work/216ddd40-ac14-4e53-9142-c7eb9955fbc1"
   },
   {
     id: 5,
-    tag: 'Design',
+    // tag: 'Design',
     featured: false,
-    icon: '✏️',
-    name: 'Modular 3D Printed Prosthetic',
-    by: 'Batch 3 · Design Domain',
-    color: '#ff9447'
+    icon: Proj5,
+    name: 'Design of a Secured Network Infrastructure for a University Campus',
+    color: '#ff9447',
+    link: "https://hub.uvcemarvel.in/work/ba5d1d95-484d-476b-806e-110d1999337e"
   },
 ]
 
@@ -59,27 +62,28 @@ function Projects() {
       </div>
 
       <div className="projects-grid">
-        {/* Featured card */}
-        <div className="project-card featured">
-          <div className="project-visual">🤖</div>
+        
+        <a href="https://hub.uvcemarvel.in/work/15af723e-9670-4b82-ae02-0a5ea760e859">
+          <div className="project-card featured">
+          <img src={Proj1} className='project-visual' alt="" />
           <div className="project-tag-list">
-            <span className="project-tag">AI / ML</span>
             <span className="project-tag highlight">Featured</span>
           </div>
           <div className="project-name">Autonomous Gesture Recognition System</div>
-          <div className="project-by">By Batch 6 · AI/ML Domain</div>
         </div>
+        </a>
 
-        {/* Rest of projects */}
+        
         {projects.slice(1).map(p => (
-          <div className="project-card" key={p.id} style={{'--p-color': p.color}}>
-            <div className="project-visual-small">{p.icon}</div>
+          <a href={p.link}>
+            <div className="project-card" key={p.id} style={{'--p-color': p.color}}>
+              <img src={p.icon} className="project-visual-small" alt="" />
             <div className="project-tag-list">
-              <span className="project-tag">{p.tag}</span>
             </div>
             <div className="project-name">{p.name}</div>
             <div className="project-by">{p.by}</div>
           </div>
+          </a>
         ))}
       </div>
     </section>

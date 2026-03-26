@@ -7,6 +7,7 @@ import Projects from './components/Projects/projects'
 import Achievements from './components/Achievements/achievements'
 import JoinCTA from './components/JoinCTA/JoinCTA'
 import Footer from './components/Footer/footer'
+import Tracks from "./components/Tracks/tracks";
 
 import './App.css'
 
@@ -20,6 +21,7 @@ function App () {
     <About/>
     <Domains/>
     <Projects/>
+    <Tracks/>
     <Achievements/>
     <JoinCTA/>
     <Footer/>
