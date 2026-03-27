@@ -150,20 +150,13 @@
   50% { transform: scaleY(0.5); opacity: 0.3; }
 }
 
-@media (max-width: 600px) {
-
+@media (max-width: 480px) {
   .hero {
-    padding: 0 20px 60px;
-  }
-
-  .hero-tag {
-    font-size: 10px;
-    padding: 5px 12px;
-    margin-bottom: 20px;
+    padding: 0 24px 60px;
   }
 
   .hero-title {
-    margin-bottom: 32px;
+    font-size: clamp(42px, 13vw, 72px);
   }
 
   .hero-bottom {
@@ -172,26 +165,9 @@
     gap: 24px;
   }
 
-  .hero-desc {
-    max-width: 100%;
-    font-size: 14px;
-  }
-
   .hero-stats {
-    width: 100%;
-    justify-content: space-between;
-    gap: 0;
+    gap: 24px;
   }
 
-  .stat-item {
-    text-align: left;
-  }
-
-  .stat-num {
-    font-size: 32px;
-  }
-
-  .scroll-indicator {
-    display: none; /* cleaner mobile UX */
-  }
+  .stat-num { font-size: 28px; }
 }
