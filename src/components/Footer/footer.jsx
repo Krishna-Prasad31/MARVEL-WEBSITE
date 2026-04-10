@@ -2,7 +2,7 @@ import './footer.css'
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer"> 
       <div className="footer-top">
         <div className="footer-logo">MAR<span>V</span>EL</div>
         <div className="footer-links">

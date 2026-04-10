@@ -30,7 +30,7 @@ function Navbar() {
       <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
         <li><a href="#about">About</a></li>
         <li><a href="#domains">Domains</a></li>
-        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#achievements">Achievements</a></li>
       </ul>
 
