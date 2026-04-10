@@ -7,7 +7,7 @@ function Navbar() {
   const [scroll, setScroll] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
-  useEffect(() => {
+  useEffect(() => { 
     const handleScroll = () => {
       setScroll(window.scrollY > 60)
     }
@@ -20,7 +20,7 @@ function Navbar() {
     <nav className={`navbar ${scroll ? 'scrolled': ''}`}>
       
       <a href="#" className='marvel-logo'>
-        <img src={logo} alt="marvel-logo" height="36" />
+        <img src={logo} alt="marvel-logo" height="50" />
       </a>
 
       <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>

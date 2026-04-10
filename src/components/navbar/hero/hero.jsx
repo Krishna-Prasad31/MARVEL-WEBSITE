@@ -3,7 +3,16 @@ import './hero.css'
 function Hero() {
   return (
     <section className="hero">
-      <div className="hero-bg"></div>
+      <video
+  className="hero-video"
+  autoPlay
+  muted
+  loop
+  playsInline
+>
+  <source src="/public/videoplayback.mp4" type="video/mp4" />
+</video>
+<div className="hero-bg"></div>
       <div className="hero-grid"></div>
 
       <div className="hero-tag">
@@ -44,6 +53,7 @@ function Hero() {
         <div className="scroll-line"></div>
         <span></span>
       </div>
+      
     </section>
   )
 }
