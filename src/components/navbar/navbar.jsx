@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react'
 import './navbar.css'
 import logo from '../../assets/White New.svg'
+import sun from "../../assets/sun-svgrepo-com.svg"
+import moon from "../../assets/moon-svgrepo-com.svg"
 
-function Navbar() {
+function Navbar({toggleTheme, theme}) {
 
   const [scroll, setScroll] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
@@ -34,15 +36,14 @@ function Navbar() {
         <li><a href="#achievements">Achievements</a></li>
       </ul>
 
-      <a 
-        href="https://hub.uvcemarvel.in/" 
-        className='nav-cta' 
-        target="_blank" 
-        rel="noopener noreferrer"
-      >
-        Join MARVEL
-      </a>
-
+      <div className="nav-right">
+        <button className="theme-toggle" onClick={toggleTheme}>
+          {theme === 'dark' ? <img className='sunMoon' src={sun} alt="" /> :<img className='sunMoon' src={moon} alt="" /> }
+        </button>
+        <a href="https://hub.uvcemarvel.in" className="nav-cta" target="_blank">
+          Reach Us Out →
+        </a>
+      </div>
     </nav>
   )
 }

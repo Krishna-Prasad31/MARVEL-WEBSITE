@@ -7,12 +7,12 @@
 }
 
 :root {
-  --bg: #050505;
-  --surface: #0e0e0e;
+  --bg: var(--bg);
+  --surface: var(--surface);
   --border: rgba(255,255,255,0.07); 
-  --text: #f0ede8;
-  --muted: #6b6b6b;
-  --accent: #e8ff47;
+  --text: var(--text);
+  --muted: var(--muted);
+  --accent: var(--accent);
 }
 
 .navbar {
@@ -79,6 +79,35 @@
   cursor: pointer;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.sunMoon{
+  height: 20px;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+}
+
 /* ================= TABLET ================= */
 @media (max-width: 900px) {
   .navbar {
@@ -105,7 +134,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    background: #050505;
+    background: var(--bg);
     flex-direction: column;
     gap: 20px;
     padding: 20px;

@@ -11,12 +11,23 @@ import Tracks from "./components/Tracks/tracks";
 
 import './App.css'
 
+import { useState, useEffect } from 'react'
 
-function App () {
-  return(
+function App() {
+  const [theme, setTheme] = useState('dark')
+
+  useEffect(() => {
+    document.documentElement.className = theme
+  }, [theme])
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === 'dark' ? 'light' : 'dark')
+  }
+
+  return (
     <>
-    <Navbar/>
-    <Hero/>
+      <Navbar toggleTheme={toggleTheme} theme={theme} />
+      <Hero/>
     <Marquee />
     <About/>
     <Domains/>
@@ -26,8 +37,9 @@ function App () {
     <JoinCTA/>
     <Footer/>
     </>
-    
   )
 }
+
+
 
 export default App
