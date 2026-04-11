@@ -1,9 +1,9 @@
 .marquee-section {
-  border-top: 1px solid rgba(255,255,255,0.07);
-  border-bottom: 1px solid rgba(255,255,255,0.07);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
   padding: 20px 0;
   overflow: hidden;
-  background: #0e0e0e;
+  background: var(--surface);
 }
 
 .marquee-track {
@@ -26,17 +26,17 @@
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #6b6b6b;
+  color: var(--muted);
   white-space: nowrap;
   transition: color 0.2s;
 }
 
 .marquee-item:hover {
-  color: #f0ede8;
+  color: var(--text);
 }
 
 .marquee-dot {
-  color: #e8ff47;
+  color: var(--accent);
   font-size: 16px;
 }
 
