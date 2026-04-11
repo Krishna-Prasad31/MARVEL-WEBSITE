@@ -10,7 +10,7 @@ function Hero() {
   loop
   playsInline
 >
-  <source src="/public/videoplayback.mp4" type="video/mp4" />
+  <source src="/videoplayback.mp4" type="video/mp4" />
 </video>
 <div className="hero-bg"></div>
       <div className="hero-grid"></div>
