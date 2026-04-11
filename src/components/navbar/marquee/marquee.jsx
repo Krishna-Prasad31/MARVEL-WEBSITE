@@ -1,13 +1,13 @@
 import './marquee.css'
 
 const items = [
-  'AI and Machine Learning',
+  'ARTIFICIAL INTELLIGENCE and Machine Learning',
   'Aviation',
-  'EV-RE',
+  'ELECTRIC VEHICLES-RENEWABLE ENERGY',
   'Internet of Things',
   'Design and Prototyping',
   'VFX',
-  'CL-CY'
+  'CLOUD COMPUTING and CYBERSECURITY'
 ]
 
 function Marquee() {
