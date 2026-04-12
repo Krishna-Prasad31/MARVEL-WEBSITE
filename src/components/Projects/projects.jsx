@@ -10,7 +10,7 @@ const projects = [
     id: 1,
     featured: true,
     icon: Proj1,
-    name: 'Autonomous Gesture Recognition System',
+    name: 'Autonomous Gesture Recognition System', 
     color: '#e8ff47'
   },
   {

@@ -57,7 +57,7 @@
 
 .nav-cta {
   background: var(--accent);
-  color: #000;
+  color: white;
   font-family: 'Syne', sans-serif;
   font-weight: 700;
   font-size: 12px;
@@ -68,7 +68,10 @@
   transition: all 0.2s;
 }
 
-.nav-cta:hover { background: #fff; }
+.nav-cta:hover { 
+  background: #fff; 
+  color: black;
+}
 
 
 /* HAMBURGER */
@@ -98,6 +101,7 @@
   align-items: center;
   justify-content: center;
   transition: all 0.2s;
+   background-color: aliceblue;
 }
 
 .sunMoon{

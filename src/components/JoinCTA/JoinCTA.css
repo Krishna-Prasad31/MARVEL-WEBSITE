@@ -80,6 +80,7 @@
 
   .join-title {
     font-size: clamp(42px, 10vw, 64px);
+    color: #000000;
   }
 
   .join-right {
@@ -90,6 +91,7 @@
     max-width: 100%;
     font-size: 14px;
     margin-bottom: 24px;
+    color: rgba(0,0,0,0.6);
   }
 
   .join-btn {

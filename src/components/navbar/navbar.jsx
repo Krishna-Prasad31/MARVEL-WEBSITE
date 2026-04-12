@@ -35,7 +35,7 @@ function Navbar({toggleTheme, theme}) {
         <li><a href="#projects">Projects</a></li>
         <li><a href="#achievements">Achievements</a></li>
       </ul>
-
+ 
       <div className="nav-right">
         <button className="theme-toggle" onClick={toggleTheme}>
           {theme === 'dark' ? <img className='sunMoon' src={sun} alt="" /> :<img className='sunMoon' src={moon} alt="" /> }

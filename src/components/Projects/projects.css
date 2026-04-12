@@ -22,6 +22,7 @@
 .projects-grid a {
   text-decoration: none;
   display: block;
+  color: inherit;
 }
 
 .projects-grid a:first-child {
@@ -38,7 +39,8 @@
   height: 100%;
 }
 
-.project-card:hover { background: #1e1e1e; }
+.project-card:hover { background: var(--surface2);
+ }
 
 /* FEATURED */
 .project-card.featured {

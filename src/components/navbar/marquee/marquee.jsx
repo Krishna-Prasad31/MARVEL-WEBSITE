@@ -6,7 +6,7 @@ const items = [
   'ELECTRIC VEHICLES-RENEWABLE ENERGY',
   'Internet of Things',
   'Design and Prototyping',
-  'VFX',
+  'Visual Effects',
   'CLOUD COMPUTING and CYBERSECURITY'
 ]
 
