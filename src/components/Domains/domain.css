@@ -3,7 +3,7 @@ body {
 }
 
 .domains {
-  background: #050505;
+  background: var(--bg);
   padding: 120px 60px;
 }
 
@@ -37,8 +37,8 @@ body {
 
 /* BASE CARD */
 .domain-card {
-  background: #0e0e0e;
-  border: 1px solid rgba(255,255,255,0.07);
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 16px;
   padding: 32px;
   position: relative;
@@ -86,7 +86,7 @@ body {
 /* NUM */
 .domain-num {
   font-size: 11px;
-  color: #6b6b6b;
+  color: var(--muted);
   letter-spacing: 0.15em;
   position: relative;
   z-index: 1;
