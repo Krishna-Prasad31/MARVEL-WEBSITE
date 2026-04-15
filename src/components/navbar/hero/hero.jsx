@@ -30,7 +30,7 @@ function Hero() {
       <div className="hero-bottom">
         <p className="hero-desc">
           MARVEL is UVCE's makerspace for{' '}
-          <strong>advanced research, vital education and learning</strong>.
+          <strong >advanced research, vital education and learning</strong>.
           A space where curiosity meets capability and students build the future.
         </p>
         <div className="hero-stats">

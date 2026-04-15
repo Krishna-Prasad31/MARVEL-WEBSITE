@@ -30,9 +30,9 @@ function App() {
       <Hero/>
     <Marquee />
     <About/>
+    <Tracks/>
     <Domains/>
     <Projects/>
-    <Tracks/>
     <Achievements/>
     <JoinCTA/>
     <Footer/>

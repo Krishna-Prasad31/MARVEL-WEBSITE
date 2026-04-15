@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './navbar.css'
-import logo from '../../assets/White New.svg'
+import logo from '../../assets/White New - Copy.svg'
 import sun from "../../assets/sun-svgrepo-com.svg"
 import moon from "../../assets/moon-svgrepo-com.svg"
 
