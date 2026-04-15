@@ -1,10 +1,10 @@
 import './domain.css'
 import { useState } from 'react'
+import EVRE from "../../assets/electric-car-4-svgrepo-com.svg?react"
+import IoT from "../../assets/iot-platform-svgrepo-com.svg?react"
+import DNP from "../../assets/design-svgrepo-com.svg?react"
 import AIML from "../../assets/artificial-intelligence_12475931.png"
-import EVRE from "../../assets/electric-car-4-svgrepo-com.svg"
 import AIR from "../../assets/camera-drone.png"
-import IoT from "../../assets/iot-platform-svgrepo-com.svg"
-import DNP from "../../assets/design-svgrepo-com.svg"
 import VFX from "../../assets/visual-effect.png"
 import CLCY from "../../assets/cloud-service.png"
 
@@ -86,7 +86,11 @@ function Domains() {
               style={{ '--domain-color': domain.color }}
             >
               <div className="domain-num">{domain.num}</div>
-              <img className="domain-img" src={domain.svg} alt="" />
+             {typeof domain.svg === "string" ? (
+                  <img className="domain-img" src={domain.svg} alt="" />
+                ) : (
+                  <domain.svg className="domain-img" />
+                )}
               <div className="domain-content">
                 <div className="domain-name">{domain.name}</div>
                 <div className="domain-desc">{domain.des}</div>

@@ -17,3 +17,26 @@
   --muted: #666666;
   --accent: #e8ff47;
 }
+
+/* DARK MODE → WHITE ICONS */
+.dark .domain-img {
+  filter: brightness(0) invert(1);
+}
+
+/* LIGHT MODE → BLACK ICONS */
+.light .domain-img {
+  filter: brightness(0) invert(0);
+  opacity: 0.7;
+}
+
+:root {
+  --icon-filter: brightness(0) invert(1); /* light default */
+}
+
+.dark {
+  --icon-filter: brightness(0) invert(0);
+}
+
+.domain-img {
+  filter: var(--icon-filter);
+}

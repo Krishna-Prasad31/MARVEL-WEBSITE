@@ -14,20 +14,23 @@ body {
 /* BENTO GRID */
 .domains-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 220px);
-  gap: 12px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 180px;
+  gap: 14px;
 }
 
 /* BENTO POSITIONS */
-.domain-pos-1 { grid-column: span 2; grid-row: span 2; }
-.domain-pos-2 { grid-row: span 2; }
-.domain-pos-3 { grid-row: span 2; }
-.domain-pos-4 { grid-column: span 1; }
-.domain-pos-5 { grid-column: span 1; }
-.domain-pos-6 { grid-column: span 1; }
-.domain-pos-7 { grid-column: span 1; }
+/* Balanced Bento Layout */
 
+.domain-pos-1 { grid-column: span 3; grid-row: span 2; }
+.domain-pos-2 { grid-column: span 3; grid-row: span 2; }
+
+.domain-pos-3 { grid-column: span 2; grid-row: span 2; }
+.domain-pos-4 { grid-column: span 2; grid-row: span 2; }
+.domain-pos-5 { grid-column: span 2; grid-row: span 2; }
+
+.domain-pos-6 { grid-column: span 3; grid-row: span 1; }
+.domain-pos-7 { grid-column: span 3; grid-row: span 1; }
 /* LINK */
 .links {
   text-decoration: none;
@@ -40,7 +43,7 @@ body {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 32px;
+  padding: 28px;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -97,21 +100,20 @@ body {
   position: absolute;
   right: 24px;
   top: 28px;
-  width: 48px;
-  opacity: 0.15;
+  width: 40px;
+  opacity: 0.12;
   pointer-events: none;
   transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
-  fill: black;
+  
+  fill: palevioletred;
+  filter: brightness(0) invert(1);
 }
 
 .domain-pos-1 .domain-img { width: 72px; }
 .domain-pos-2 .domain-img,
 .domain-pos-3 .domain-img { width: 52px; }
 
-.domain-card.domain-hovered .domain-img {
-  opacity: 0.5;
-  transform: scale(1.15) rotate(-8deg);
-}
+
 
 /* CONTENT */
 .domain-content {
@@ -127,11 +129,13 @@ body {
   color: var(--domain-color);
   margin-bottom: 8px;
   line-height: 1.3;
-  font-size: 14px;
+  font-size: 16px;
 }
 
-.domain-pos-1 .domain-name { font-size: 20px; }
-.domain-pos-2 .domain-name,
+.domain-pos-1 .domain-name,
+.domain-pos-2 .domain-name {
+  font-size: 18px;
+}
 .domain-pos-3 .domain-name { font-size: 16px; }
 
 /* DESC — hidden on small cards by default */
@@ -179,22 +183,96 @@ body {
 }
 
 /* MOBILE */
+/* ================= MOBILE (<= 768px) ================= */
 @media (max-width: 768px) {
-  .domains { padding: 80px 20px; }
-  .domains-grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 8px;
+
+  .domains {
+    padding: 80px 20px;
   }
-  .domain-pos-1 { grid-column: span 2; grid-row: auto; }
-  .domain-pos-2, .domain-pos-3 { grid-row: auto; }
-  .domain-card { min-height: 200px; }
-  .domain-desc { max-height: 80px !important; opacity: 1 !important; }
-  .domain-card.domain-dimmed { opacity: 1; filter: none; transform: none; }
+
+  .domains-grid {
+    grid-template-columns: 1fr;   /* single column */
+    grid-auto-rows: auto;
+    gap: 12px;
+  }
+
+  /* Remove ALL bento spans */
+  .domain-pos-1,
+  .domain-pos-2,
+  .domain-pos-3,
+  .domain-pos-4,
+  .domain-pos-5,
+  .domain-pos-6,
+  .domain-pos-7 {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+
+  .domain-card {
+    min-height: 160px;
+    padding: 20px;
+    border-radius: 14px;
+  }
+
+  /* Always show description */
+  .domain-desc {
+    max-height: none !important;
+    opacity: 1 !important;
+  }
+
+  /* Disable hover effects (mobile doesn't need them) */
+  .domain-card.domain-hovered {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .domain-card.domain-dimmed {
+    opacity: 1;
+    filter: none;
+    transform: none;
+  }
+
+  /* Clean icon sizing */
+  .domain-img {
+    width: 36px;
+    opacity: 0.12;
+    top: 20px;
+    right: 20px;
+  }
+
+  /* Typography balance */
+  .domain-name {
+    font-size: 15px;
+  }
+
+  .domain-num {
+    font-size: 10px;
+  }
 }
 
+
+/* ================= EXTRA SMALL (<= 480px) ================= */
 @media (max-width: 480px) {
-  .domains-grid { grid-template-columns: 1fr; }
-  .domain-pos-1 { grid-column: span 1; }
-  .domain-card { min-height: 180px; border-radius: 12px; }
+
+  .domains {
+    padding: 60px 16px;
+  }
+
+  .domain-card {
+    min-height: 140px;
+    padding: 18px;
+    border-radius: 12px;
+  }
+
+  .domain-name {
+    font-size: 14px;
+  }
+
+  .domain-desc {
+    font-size: 11px;
+  }
+
+  .domain-img {
+    width: 32px;
+  }
 }
