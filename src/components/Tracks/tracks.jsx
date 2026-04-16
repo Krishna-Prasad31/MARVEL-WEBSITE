@@ -58,7 +58,7 @@ const tracks = [
   },
 ]
 
-function Tracks() {
+function Tracks() { 
   return (
     <section className="tracks" id="tracks">
       <div className="tracks-header">
