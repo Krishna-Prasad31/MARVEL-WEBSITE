@@ -50,7 +50,7 @@
 }
 
 .dark .track-icon {
-  opacity: 1;              /* 🔥 THIS FIXES IT */
+  opacity: 1;          
   filter: brightness(0) invert(1);
 }
 
