@@ -12,7 +12,7 @@ const domains = [
   {
     num: '1', svg: AIML,
     name: "Artificial Intelligence and Machine Learning",
-    des: "Understand how machines learn from data and build systems that can predict, classify, and automate real-world tasks.",
+    des: "Understand how machines learn from data to make intelligent decisions. Build models that can predict outcomes, recognize patterns, and automate complex real-world processes.",
     color: '#47c8ff',
     link: "https://hub.uvcemarvel.in/course/AI-ML-001"
   },
