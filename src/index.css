@@ -12,7 +12,7 @@
   --bg: #f8f8f8;
   --surface: #ffffff;
   --surface2: #f0f0f0;
-  --border: rgba(0,0,0,0.08);
+  --border: rgba(0,0,0,0.2);
   --text: #1a1a1a;
   --muted: #666666;
   --accent: #e8ff47;
@@ -39,4 +39,22 @@
 
 .domain-img {
   filter: var(--icon-filter);
+}
+
+:root {
+  --icon-filter: brightness(0) invert(1); 
+}
+
+.dark {
+  --icon-filter: brightness(0) invert(0); 
+}
+
+.dark .track-icon {
+  opacity: 1;              /* 🔥 THIS FIXES IT */
+  filter: brightness(0) invert(1);
+}
+
+.light .track-icon {
+  opacity: 0.7;
+  filter: brightness(0) invert(0);
 }
