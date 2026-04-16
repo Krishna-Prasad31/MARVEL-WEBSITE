@@ -14,14 +14,14 @@ import './App.css'
 import { useState, useEffect } from 'react'
 
 function App() {
-  const [theme, setTheme] = useState('dark')
+  const [theme, setTheme] = useState('light')
 
   useEffect(() => {
     document.documentElement.className = theme
   }, [theme])
 
   const toggleTheme = () => {
-    setTheme(prev => prev === 'dark' ? 'light' : 'dark')
+    setTheme(prev => prev === 'light' ? 'dark' : 'light')
   }
 
   return (
